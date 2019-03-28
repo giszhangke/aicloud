@@ -1,0 +1,15 @@
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: service-producer
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+
