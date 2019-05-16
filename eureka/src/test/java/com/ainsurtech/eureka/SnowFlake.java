@@ -21,8 +21,8 @@ public class SnowFlake {
     private static int TOTAL_BIT = 64;
     private static int SIGN_BIT = TOTAL_BIT - 1;
     private static int TIMESTAMP_BIT = SIGN_BIT - 41;
-    private static int DATA_CENTER_BIT = TIMESTAMP_BIT - 4;
-    private static int MACHINE_PER_CENTER_BIT = DATA_CENTER_BIT - 5;
+    private static int DATA_CENTER_BIT = TIMESTAMP_BIT - 3;
+    private static int MACHINE_PER_CENTER_BIT = DATA_CENTER_BIT - 3;
     private static int SEQUENCE_BIT = MACHINE_PER_CENTER_BIT - 9;
     private static int MAX_RANDOM = (1 << SEQUENCE_BIT) - 1;
     private static int SEQUENCE_INIT = 0;
