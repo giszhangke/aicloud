@@ -1,4 +1,4 @@
-package com.ainsurtech.eureka.xml;
+package com.klovis.aicloudcore.xml;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 

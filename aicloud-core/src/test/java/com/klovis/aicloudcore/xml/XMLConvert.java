@@ -1,4 +1,4 @@
-package com.ainsurtech.eureka.xml;
+package com.klovis.aicloudcore.xml;
 
 import com.sun.xml.internal.bind.marshaller.CharacterEscapeHandler;
 import lombok.extern.slf4j.Slf4j;

@@ -10,11 +10,13 @@ import org.apache.commons.lang.math.RandomUtils;
  * @author: klovis
  * @create: 2019-05-14 19:03
  **/
-@Slf4j
-public class SnowFlake {
+public final class SnowFlake {
 
     private static long START_TIMESTAMP = 1557833070903L;
     private static int TOTAL_BIT = 64;
+    /**
+     * 符号
+     */
     private static int SIGN_BIT = TOTAL_BIT - 1;
     private static int TIMESTAMP_BIT = SIGN_BIT - 41;
     private static int DATA_CENTER_BIT = TIMESTAMP_BIT - 3;
